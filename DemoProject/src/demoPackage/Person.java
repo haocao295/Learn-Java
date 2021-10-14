@@ -17,36 +17,34 @@ public class Person {
         this.workDay = workDay;
     }
     Scanner sc = new Scanner(System.in);
-   public void inPut()
+    //input
+   public void input()
    {
 
        System.out.println("Text your name: ");
        this.name = sc.nextLine();
        System.out.println("Text your age:");
        this.age = sc.nextInt();
-       System.out.println("Text your gender:");
+       System.out.println("Text your gender(1 or 0):");
        this.gender = sc.nextInt();
-       do {
-           System.out.println("Incorrect! plz Text again: ");
-           this.gender = sc.nextInt();
-       }while( this.gender < 3 && this.gender >= 0);
        System.out.println("Text your height:");
        this.height = sc.nextFloat();
        System.out.println(" Text your workDay: ");
        this.workDay = sc.nextFloat();
 
    }
-   public void outPut()
+   //output
+   public void output()
    {
        System.out.println("Your name: "+this.name);
        System.out.println("Your age: "+this.age);
        System.out.print("Your gender: ");
        if(this.gender == 0)
-           System.out.print("Female ");
+           System.out.println("Female ");
        else if(this.gender == 1)
-           System.out.print("Male");
-       else if(this.gender == 2)
-           System.out.print("Null");
+           System.out.println("Male");
+       else if(this.gender > 1)
+           System.out.println("Null");
        System.out.println("Your height: "+this.height);
        System.out.println("Your workDay: "+this.workDay);
    }

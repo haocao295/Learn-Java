@@ -17,9 +17,9 @@ public class Student extends Person {
 
 
     @Override
-    public void inPut() {
+    public void input() {
         System.out.println("STUDENT:");
-        super.inPut();
+        super.input();
         System.out.println("Text your coefficients: ");
         this.coefficients = sc.nextInt();
     }
@@ -30,9 +30,9 @@ public class Student extends Person {
     }
 
     @Override
-    public void outPut() {
+    public void output() {
         System.out.println("STUDENT:");
-        super.outPut();
+        super.output();
         System.out.println("Your NetSalary: "+ NetSalary());
     }
 }
